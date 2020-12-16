@@ -1,0 +1,46 @@
+.navbar {
+    background: #2a2a2a;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nav-icon nav-links";
+    gap: 10px;
+}
+
+.navbar__icon img {
+    width: 60px;
+}
+
+.navbar__icon {
+    padding: 4px 12px;
+    grid-area: nav-icon;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__icon .navbar__name-app {
+    font-size: 1.9rem;
+    font-weight: bold;
+    padding-left: 6px;
+    color: white;
+    letter-spacing: .5px;
+}
+
+.navbar__options {
+    grid-area: nav-links;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+}
+
+.navbar__options li {
+    list-style: none;
+}
+
+.navbar__options li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #a0a0a0;
+    margin-right: 8px;
+    letter-spacing: 1px;
+}
