@@ -44,3 +44,7 @@
     margin-right: 8px;
     letter-spacing: 1px;
 }
+
+.navbar__options li a.active {
+    color: #1ed760;
+}
