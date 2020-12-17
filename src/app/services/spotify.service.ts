@@ -16,11 +16,11 @@ export class SpotifyService {
     //aqui pongo los headers que la peticion de spotify requiere.
     const headers = new HttpHeaders({
       
-      'Authorization': 'Bearer BQDK_Z1MPVd7-UXOqXhYXGuoYBuvbpC2LZm2rl2zpCVUwc5TS-246jbSo0ty8gJZoYIXDuHIyIvhKu4pdvA'
+      'Authorization': 'Bearer BQBz7hhQjNUVoSyfxn0N13bp_hGe2jp8wmtUttHUNuirH23iMW3C7_9JCaYGFgcdCj337_YwUCfU4j1GUj0'
 
     })
 
-    return this.http.get('https://api.spotify.com/v1/browse/new-releases',{headers});
+    return this.http.get('https://api.spotify.com/v1/browse/new-releases?limit=21',{headers});
       
   }
 
