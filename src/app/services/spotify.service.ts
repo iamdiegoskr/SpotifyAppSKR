@@ -16,7 +16,7 @@ export class SpotifyService {
     //aqui pongo los headers que la peticion de spotify requiere.
     const headers = new HttpHeaders({
       
-      'Authorization': 'Bearer BQByvIrzkLFstCyt3CyYDn9kTlErJobU8OJynxWNLXXBnCzswOjG5Pox6Ghy5nv3nUQfhh_O4oa8FFSC8S0'
+      'Authorization': 'Bearer BQDK_Z1MPVd7-UXOqXhYXGuoYBuvbpC2LZm2rl2zpCVUwc5TS-246jbSo0ty8gJZoYIXDuHIyIvhKu4pdvA'
 
     })
 
