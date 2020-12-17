@@ -9,6 +9,11 @@
     border-radius: 6px;
     border: none;
     background: #272727;
+    background-image: url('../../../assets/img/searchgray.png');
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: center;
 }
 
 .search-form .search-input:focus {
