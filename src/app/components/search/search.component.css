@@ -1,0 +1,21 @@
+.search-form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.search-form .search-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background: #272727;
+}
+
+.search-form .search-input:focus {
+    background: white;
+    color: #000;
+}
+
+.search-form .search-input::placeholder {
+    color: rgb(145, 145, 145);
+}

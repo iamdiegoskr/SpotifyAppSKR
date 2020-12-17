@@ -1,3 +1,7 @@
+<div class="not-work" *ngIf="newReleases.length==0">
+    <img src="assets/img/dead.png" alt="">
+    <p>Estamos teniendo dificultades técnicas. vuelve a intentarlo más tarde</p>
+</div>
 <section class="new-releases">
     <div *ngFor="let release of newReleases" class="spoti-card">
         <figure class="poster-container">

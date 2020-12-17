@@ -49,3 +49,16 @@
     margin-right: 8px;
     margin-bottom: 6px;
 }
+
+.not-work {
+    width: 100%;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.not-work p {
+    font-size: 1.6rem;
+    color: #2ecc71;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
