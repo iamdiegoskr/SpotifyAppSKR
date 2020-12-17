@@ -20,10 +20,7 @@ export class SpotifyService {
 
     })
 
-    this.http.get('https://api.spotify.com/v1/browse/new-releases',{headers})
-      .subscribe(data =>{
-        console.log(data)
-      })
+    return this.http.get('https://api.spotify.com/v1/browse/new-releases',{headers});
       
   }
 
