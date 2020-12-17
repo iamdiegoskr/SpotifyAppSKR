@@ -18,9 +18,7 @@ export class SpotifyService {
       'Authorization': 'Bearer BQCGNtEsiJU0VG5GZ3drn5hsifgnwzeHfzRGViy-E8Vx1MXjOS_Jc8r4axInDcH7rNcFNhEPV2OH9HqZsls'
     })
     return this.http.get('https://api.spotify.com/v1/browse/new-releases?limit=21',{headers})
-      .pipe(map(data=> {
-        return data['albums'].items;
-      }))
+      .pipe(map(data => data['albums'].items));
   }
 
 
@@ -28,7 +26,10 @@ export class SpotifyService {
     const headers = new HttpHeaders({
       'Authorization': 'Bearer BQCGNtEsiJU0VG5GZ3drn5hsifgnwzeHfzRGViy-E8Vx1MXjOS_Jc8r4axInDcH7rNcFNhEPV2OH9HqZsls'
     })
-    return this.http.get(`https://api.spotify.com/v1/search?q=${nameArtist}&type=artist`,{headers});
+    return this.http.get(`https://api.spotify.com/v1/search?q=${nameArtist}&type=artist`,{headers})
+      .pipe(map(data=>{
+        return data['artists'].items;
+      }))
   }
 
 }
