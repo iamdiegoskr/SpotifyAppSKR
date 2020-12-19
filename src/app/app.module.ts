@@ -10,6 +10,7 @@ import { ArtistComponent } from './components/artist/artist.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './components/shared/footer/footer.component';
+import { NoimagesPipe } from './pipes/noimages.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './components/shared/footer/footer.component';
     SearchComponent,
     ArtistComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    NoimagesPipe
   ],
   imports: [
     BrowserModule,

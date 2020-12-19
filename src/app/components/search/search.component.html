@@ -7,7 +7,7 @@
 <section class="new-artists">
     <div *ngFor="let artist of artists " class="spoti-card">
         <figure class="poster-container">
-            <img [src]="artist.images[0].url" alt="">
+            <img [src]="artist.images  | noimages " alt="">
         </figure>
         <p class="name-artist"> {{artist.name}} </p>
     </div>
