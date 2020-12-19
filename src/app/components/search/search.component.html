@@ -5,10 +5,5 @@
 </section>
 
 <section class="new-artists">
-    <div *ngFor="let artist of artists " class="spoti-card">
-        <figure class="poster-container">
-            <img [src]="artist.images  | noimages " alt="">
-        </figure>
-        <p class="name-artist"> {{artist.name}} </p>
-    </div>
+    <app-card-artist [artist]="artist" *ngFor="let artist of artists"></app-card-artist>
 </section>

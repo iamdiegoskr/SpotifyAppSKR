@@ -1,0 +1,12 @@
+<div class="spoti-card">
+    <figure class="poster-container">
+        <img [src]="song.images | noimages " alt="">
+    </figure>
+    <div class="spoti-details">
+        <p class="spoti-type"> {{song.album_type | uppercase }} </p>
+        <p class="spoti-tittle"> {{song.name}} </p>
+        <div class="artists">
+            <span *ngFor="let artist of song.artists" class="spoti-artist">{{artist.name}} </span>
+        </div>
+    </div>
+</div>

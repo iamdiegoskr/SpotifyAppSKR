@@ -2,18 +2,9 @@
     <img src="assets/img/dead.png" alt="">
     <p>Estamos teniendo dificultades técnicas. vuelve a intentarlo más tarde</p>
 </div>
+
 <section class="new-releases">
-    <div *ngFor="let release of newReleases" class="spoti-card">
-        <figure class="poster-container">
-            <!-- <img src="https://www.elquintobeatle.com/wp-content/uploads/2020/03/bad-bunny-yhlqmdlg-1.jpeg" alt=""> -->
-            <img [src]="release.images | noimages " alt="">
-        </figure>
-        <div class="spoti-details">
-            <p class="spoti-type"> {{release.album_type | uppercase }} </p>
-            <p class="spoti-tittle"> {{release.name}} </p>
-            <div class="artists">
-                <span *ngFor="let artist of release.artists" class="spoti-artist">{{artist.name}} </span>
-            </div>
-        </div>
-    </div>
+
+    <app-card-song [song]="release" *ngFor="let release of newReleases"></app-card-song>
+
 </section>
