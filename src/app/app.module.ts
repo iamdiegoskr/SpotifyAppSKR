@@ -13,6 +13,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { NoimagesPipe } from './pipes/noimages.pipe';
 import { CardSongComponent } from './components/card-song/card-song.component';
 import { CardArtistComponent } from './components/card-artist/card-artist.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CardArtistComponent } from './components/card-artist/card-artist.compon
     FooterComponent,
     NoimagesPipe,
     CardSongComponent,
-    CardArtistComponent
+    CardArtistComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

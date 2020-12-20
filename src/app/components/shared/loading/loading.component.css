@@ -1,0 +1,8 @@
+.load-container {
+    width: 100%;
+    text-align: center;
+}
+
+.load-container i {
+    font-size: 64px;
+}
