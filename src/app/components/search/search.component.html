@@ -7,6 +7,6 @@
 
 <app-loading *ngIf="loading" class="loading"></app-loading>
 
-<section class="new-artists" *ngIf="loading==false">
+<section class="new-artists" *ngIf="!loading">
     <app-card-artist [artist]="artist" *ngFor="let artist of artists"></app-card-artist>
 </section>

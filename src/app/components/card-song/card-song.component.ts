@@ -11,4 +11,8 @@ export class CardSongComponent{
 
   constructor() { }
 
+  seeAlbum(item:any){
+    console.log(item)
+  }
+
 }
