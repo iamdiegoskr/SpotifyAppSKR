@@ -7,6 +7,11 @@
     justify-content: center;
 }
 
+.loading {
+    height: 80vh;
+    line-height: 80vh;
+}
+
 
 /*NO WORKING*/
 

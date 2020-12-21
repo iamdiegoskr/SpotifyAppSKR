@@ -4,6 +4,9 @@
     </form>
 </section>
 
-<section class="new-artists">
+
+<app-loading *ngIf="loading" class="loading"></app-loading>
+
+<section class="new-artists" *ngIf="loading==false">
     <app-card-artist [artist]="artist" *ngFor="let artist of artists"></app-card-artist>
 </section>
