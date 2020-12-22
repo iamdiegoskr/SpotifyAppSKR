@@ -8,10 +8,36 @@
     </figure>
     <div class="artist-detail">
         <h2 class="artist-name"> {{artist.name}} </h2>
-        <a href="" target="_blank" class="artist-link">Ir a la pagina del artista.</a>
+        <a [href]="artist.external_urls.spotify" target="_blank" class="artist-link">Ir a la pagina del artista.</a>
     </div>
     <div class="back-button">
         <a routerLink="/search">Regresar</a>
     </div>
 
 </div>
+
+
+<section class="top-tracks" *ngIf="!loading">
+    <table class="table-tracks">
+        <thead>
+            <tr>
+                <th>Foto</th>
+                <th>Cancion/Album</th>
+                <th>Nombre</th>
+                <th>Vista previa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let track of topTracks">
+                <td class="picture-song">
+                    <img [src]="track.album.images | noimages" alt="">
+                </td>
+                <td> {{track.album.name}} </td>
+                <td> {{track.name}} </td>
+                <td>
+                    <audio [src]="track.preview_url" controls></audio>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
