@@ -6,7 +6,8 @@
 
 </section>
 
-<!-- <div class="not-work" *ngIf="newReleases.length==0">
+<div class="not-work" *ngIf="error">
     <img src="assets/img/dead.png" alt="">
     <p>Estamos teniendo dificultades técnicas. vuelve a intentarlo más tarde</p>
-</div> -->
+    <p class="errorService"> ' {{messageError}} ' </p>
+</div>
