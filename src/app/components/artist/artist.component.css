@@ -1,0 +1,71 @@
+.artist-container {
+    display: grid;
+    grid-template-columns: 20% 2fr 1fr;
+    grid-template-rows: 280px;
+    grid-template-areas: "picture-artist artist-details artist-button";
+    gap: 20px;
+}
+
+.picture-artist-container {
+    grid-area: picture-artist;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.artist-container .picture-artist-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.artist-detail {
+    grid-area: artist-details;
+    padding: 20px;
+}
+
+.artist-detail>* {
+    margin-bottom: 12px;
+}
+
+.artist-detail .artist-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #089c08;
+}
+
+.artist-detail .artist-link:hover {
+    color: #1ed760;
+}
+
+.back-button {
+    grid-area: artist-button;
+    padding: 20px;
+    text-align: right;
+}
+
+.back-button a {
+    display: inline-block;
+    text-align: center;
+    padding: 8px 0px;
+    width: 180px;
+    background: transparent;
+    border: 3px solid #ab005c;
+    color: #ab005c;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background-image: url('../../../assets/img/backbtn.png');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 0%;
+    background-size: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.back-button a:hover {
+    color: #e91b5a;
+}
+
+.loading {
+    margin-top: 120px;
+}

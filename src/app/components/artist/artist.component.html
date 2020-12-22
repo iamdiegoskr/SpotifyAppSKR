@@ -1,1 +1,17 @@
-<p>artist works!</p>
+<div class="loading" *ngIf="loading">
+    <app-loading></app-loading>
+</div>
+
+<div class="artist-container" *ngIf="!loading">
+    <figure class="picture-artist-container">
+        <img [src]="artist.images | noimages" alt="">
+    </figure>
+    <div class="artist-detail">
+        <h2 class="artist-name"> {{artist.name}} </h2>
+        <a href="" target="_blank" class="artist-link">Ir a la pagina del artista.</a>
+    </div>
+    <div class="back-button">
+        <a routerLink="/search">Regresar</a>
+    </div>
+
+</div>
